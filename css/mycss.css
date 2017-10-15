@@ -13,20 +13,8 @@
 #game{
 
   text-align: center;
-
-}
-
-#footer{
-
-  text-align: center;
-  height: 60px;
-  width: 100%;
-
-}
-
-#footer{
-
-  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
 
 }
 
@@ -58,8 +46,24 @@
 
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
 #mealweek{
 
   text-align: center;
+
+}
+
+#weeklyworkout{
+
+  margin-top: 10px;
 
 }

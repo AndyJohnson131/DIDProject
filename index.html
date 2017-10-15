@@ -11,15 +11,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
+
     <body>
 
-      <div class="navbar-fixed">
+     <div class="navbar-fixed">
       <nav>
       <div class="nav-wrapper blue darken-2">
-        <img class="responsive-img" src="assests/logo.jpg" class="brand-logo">
+        <img class="responsive-img" src="assests/logo1.jpg" class="brand-logo">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html" class="breadcrumb">Home</a></li>
           <li><a href="#mainheader">About</a></li>
           <li><a href="#workoutdiv">Workouts</a></li>
           <li><a href="#weeklyworkout">Weekly Workouts</a></li>
@@ -35,6 +36,7 @@
       </div>
     </nav>
   </div>
+
 
     <div class="container" id="mainheader">
       <div class="row">
@@ -85,6 +87,10 @@
     </div>
   </div>
 
+  <div class="parallax-container">
+  <div class="parallax"><img src="assests/bg4.jpeg"></div>
+</div>
+
 
     <div class="container" id="weeklyworkout">
       <div class="row">
@@ -114,8 +120,12 @@
       </div>
     </div>
 
+    <div class="parallax-container">
+    <div class="parallax"><img src="assests/test1.jpg"></div>
+  </div>
 
-    <div class="container blue darken-2" id="game">
+
+    <div class="container grey darken-2" id="game">
       <div class="row">
         <div class="col s12">
             <h1>Something simple to host the game or download wallpaper?</h1>
@@ -128,24 +138,41 @@
       </div>
     </div>
 
+    <footer class="page-footer blue darken-2">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="white-text">Follow us on social media to stay up to date with all the latest news!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.twitter.com"  target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>  Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>  Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>  Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com"  target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i>  Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-4">
+            <div class="container">
+            © 2017 Copyright Text
+            </div>
+          </div>
+        </footer>
 
-    <nav>
-      <div class="nav-wrapper blue darken-2">
-        <ul class="brand-logo center">
-          <li><a href="https://www.twitter.com"  target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>  Twitter</a></li>
-          <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>  Facebook</a></li>
-          <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>  Instagram</a></li>
-          <li><a href="https://www.youtube.com"  target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i>  Youtube</a></li>
-        </ul>
-      </div></li>
-    </nav>
 
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
 
+        <script>$(document).ready(function(){
+      $('.parallax').parallax();
+    });</script>
+
         <script>$(".button-collapse").sideNav();</script>
+
         <script>// Initialize collapse button
   $(".button-collapse").sideNav();
   // Initialize collapsible</script>
@@ -155,5 +182,6 @@
       }
     );
       </script>
+
     </body>
   </html>
