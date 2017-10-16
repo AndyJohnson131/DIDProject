@@ -14,6 +14,7 @@
 
     <body>
 
+      <!-- navbar idea 1 crap!
      <div class="navbar-fixed">
       <nav>
       <div class="nav-wrapper blue darken-2">
@@ -35,7 +36,36 @@
         </ul>
       </div>
     </nav>
+  </div>-->
+
+
+  <!-- navbar idea two need a menu page for mobile users>-->
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="abs.html"><span class="blue-text text-darken-2">Abs</span></a></li>
+  <li class="divider blue darken-2"></li>
+  <li><a href="#!">Biceps</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">etc</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper blue darken-2">
+    <img class="responsive-img" src="assests/logo1.jpg" class="brand-logo">
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#mainheader">About</a></li>
+      <li><a href="#weeklyworkout">Weekly Workouts and Meal Ideas</a></li>
+      <li><a href="#game">Bored</a></li>
+      <li><a href="#footer">Social Media</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Special hub menu for mobile, all muscle groups here?</a></li>
+      </ul>
   </div>
+</nav>
 
 
     <span class="blue-text text-darken-2"><div class="container" id="mainheader">
@@ -62,6 +92,7 @@
       </div>
   <div class="container" id="containermargin">
 
+ <!--side nav-->
     <h4>Eager to get started? Check out our video guides by clicking below</h4></span>
       <div class="row">
         <ul id="slide-out" class="side-nav">
@@ -83,6 +114,7 @@
         </ul>
 
         <a href="#" data-activates="slide-out" class="btn waves-effect waves-light button-collapse blue darken-2">Start your workout here!</a>
+        <!-- side nav end-->
       </div>
     </div>
   </div>
@@ -138,7 +170,7 @@
       </div>
     </div>
 
-    <footer class="page-footer blue darken-2">
+    <footer id="footer"class="page-footer blue darken-2">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -182,6 +214,8 @@
       }
     );
       </script>
+
+      <script>$(".dropdown-button").dropdown();</script>
 
     </body>
   </html>
