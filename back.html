@@ -14,15 +14,36 @@
 
     <body background="assests/bg.jpg">
 
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="abs.html"><span class="blue-text text-darken-2">Abs</span></a></li>
+        <li class="divider blue darken-2"></li>
+        <li><a href="biceps.html"><span class="blue-text text-darken-2">Biceps</span></a></li>
+        <li class="divider blue darken-2"></li>
+        <li><a href="chest.html"><span class="blue-text text-darken-2">Chest</span></a></li>
+        <li class="divider blue darken-2"></li>
+        <li><a href="legs.html"><span class="blue-text text-darken-2">Legs</span></a></li>
+        <li class="divider blue darken-2"></li>
+        <li><a href="shoulders.html"><span class="blue-text text-darken-2">Shoulders</span></a></li>
+        <li class="divider blue darken-2"></li>
+        <li><a href="triceps.html"><span class="blue-text text-darken-2">Triceps</span></a></li>
+        <li class="divider blue darken-2"></li>
+      </ul>
       <nav>
-      <div class="nav-wrapper blue darken-2">
-        <img class="responsive-img" src="assests/logo.jpg" class="brand-logo">
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html" class="brand-logo center">AJ's Fitness</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="nav-wrapper blue darken-2">
+          <img class="responsive-img" src="assests/logo1.jpg" class="brand-logo">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="brand-logo center">AJ's Fitness</li>
+            <li><a href="index.html">Home</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Exercise Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mobilehub.html">Exercise Menu</a></li>
+            </ul>
+        </div>
+      </nav>
 
 
   <div class="container">
@@ -174,5 +195,17 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script>// Initialize collapse button
+      $(".button-collapse").sideNav();
+      // Initialize collapsible</script>
+
+      <script> $('.button-collapse').sideNav({
+        closeOnClick: true,
+      }
+    );
+    </script>
+
+
     </body>
   </html>
